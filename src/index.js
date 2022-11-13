@@ -2,6 +2,7 @@ import './styles/index.sass'
 import '@fortawesome/fontawesome-free/js/fontawesome'
 import '@fortawesome/fontawesome-free/js/solid'
 
+
 const input = document.querySelector('#order-input')
 const btn = document.querySelector('#order-btn')
 const content = document.querySelector('.content')
