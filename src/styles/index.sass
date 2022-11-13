@@ -1,0 +1,103 @@
+@use "fonts"
+@use "loader.css"
+
+body
+  background-image: url("../images/background.jpeg")
+  background-size: 100%
+  font-family: Roboto, sans-serif
+
+
+.block
+  display: flex
+  background: rgba(255, 255, 255, 0.85)
+  width: 300px
+  margin: 0 auto
+  transform: skew(130deg)
+  border: 1px solid #fff
+
+
+.input
+  flex: 4
+  background: rgba(255, 255, 255, 0)
+  border: none
+  outline: none
+  transform: skew(-130deg)
+  margin-left: 20px
+
+
+.btn
+  flex: 1
+  background: #ff0000
+  color: #fff
+  padding: .7rem 0
+  border-left: 1px solid #fff
+  cursor: pointer
+  transition: all .2s ease-out
+  text-align: center
+
+  &-label
+    transform: skew(-130deg)
+    margin: 0 1rem
+    font-size: 13px
+
+
+  &:hover
+    background: rgb(218, 0, 0)
+
+
+  &:active
+    opacity: .7
+
+
+.ph-danger::placeholder
+  color: #ff4242
+
+
+.danger
+  color: #ff4242
+  text-align: center
+
+
+.content
+  display: none
+  width: 60%
+  background: rgba(255, 255, 255, 0.8)
+  margin: 2rem auto
+  padding: .5rem 1rem
+  color: #767676
+
+  animation: content .5s
+  border-radius: 10px
+
+  &-btn
+    margin-left: 80%
+    width: 20%
+    min-width: min-content
+    font-size: 14px
+    color: #767676
+
+
+.card img
+  max-width: 100%
+  max-height: 60vh
+
+
+@keyframes content
+  0%
+    transform: translateY(-300px)
+    opacity: 0
+  70%
+    transform: translateY(100px)
+    opacity: 1
+  100%
+    transform: translateY(0px)
+
+@media (max-width: 480px)
+  @import "mobile"
+
+
+
+
+
+
+
